@@ -1,0 +1,35 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run a one-line script
+      run: echo Hello, world!
+    - name: Run a multi-line script
+      run: |
+        echo Add other actions to build,
+        echo test, and deploy your project.
+        
+        
+
+function setup() {
+
+  createCanvas(windowWidth,windowHeight);
+  background(255);
+  doge = loadImage("doge.png");
+  imageMode:(CENTER);
+}
+
+function draw() {
+
+  for(let i=0;i<500;i++){
+    image(doge,random(width),random(height),200,200);
+}
+}
+
